@@ -9,5 +9,8 @@
     "bootstrap-icons": "^1.10.5",
     "esbuild": "^0.17.19",
     "sass": "^1.62.1"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets"
   }
 }

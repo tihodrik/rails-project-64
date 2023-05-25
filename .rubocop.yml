@@ -3,6 +3,8 @@ require: rubocop-rails
 AllCops:
   NewCops: enable
 
+  SuggestExtensions: false
+
   Exclude:
       - '.git/**/*'
       - 'bin/bundle'

@@ -133,6 +133,8 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.1-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.15.1-x86_64-linux)
+      racc (~> 1.4)
     parallel (1.23.0)
     parser (3.2.2.1)
       ast (~> 2.4.1)
@@ -223,6 +225,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.6.3-x86_64-darwin)
+    sqlite3 (1.6.3-x86_64-linux)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     temple (0.10.1)
@@ -255,6 +258,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap

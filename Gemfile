@@ -42,6 +42,11 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem "slim-rails"
+
+gem "sentry-ruby"
+gem "sentry-rails"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -53,6 +58,9 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"
+  gem 'minitest-power_assert'
+  gem "slim_lint"
+  gem 'rubocop-rails', require: false
 end
 
 group :development do

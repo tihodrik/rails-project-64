@@ -49,6 +49,8 @@ gem 'slim-rails'
 gem 'sentry-rails'
 gem 'sentry-ruby'
 
+gem 'devise'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

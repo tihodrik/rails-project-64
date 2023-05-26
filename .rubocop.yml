@@ -8,7 +8,9 @@ AllCops:
   Exclude:
       - '.git/**/*'
       - 'bin/bundle'
+      - 'config/initializers/*'
       - 'node_modules/**/*'
+      - 'db/schema.rb'
       - 'tmp/**/*'
       - 'vendor/**/*'
 

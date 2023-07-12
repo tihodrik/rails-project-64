@@ -100,6 +100,9 @@ GEM
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    hpricot (0.8.6)
+    html2slim (0.2.0)
+      hpricot
     i18n (1.13.0)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
@@ -279,6 +282,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise
+  html2slim
   jbuilder
   jsbundling-rails
   minitest-power_assert

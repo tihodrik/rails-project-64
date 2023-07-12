@@ -30,8 +30,6 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  sign_in: "Sign in"
-  sign_up: "Sign up"
-  sign_out: "Sign out"
-  new_post: "Write post"
+  hello: "Привет, мир!"
+  sign_in: "Войти"
+  sign_up: "Зарегистрироваться"

@@ -1,0 +1,15 @@
+h1
+  | New Post
+br
+
+= simple_form_for(@post) do |f|
+  = f.error_notification
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
+  .form-inputs
+    = f.input :title
+    = f.association :category
+    = f.input :body, as: :text, input_html: { rows: 7 }
+
+  .actions
+    = f.button :submit, class: 'btn btn-primary'

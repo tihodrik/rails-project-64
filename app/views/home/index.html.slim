@@ -1,1 +1,15 @@
 h1 Home page
+- @posts.each do |post|
+
+  ul.p-0
+    li.col-md-12.card.mb-3
+      .card-body
+        h5.card-title
+          = link_to post.title, post_path(post), class: 'link-dark text-decoration-none'
+        .card-text.mb-2
+          = post.body
+        .text-right.small.text-muted.mt-auto
+          |> Liked: 0
+          = post.created_at
+          = post.creator
+          

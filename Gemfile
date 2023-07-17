@@ -67,6 +67,7 @@ group :development, :test do
   gem 'rubocop-rails', require: false
   gem 'slim_lint'
   gem 'sqlite3', '~> 1.4'
+  gem 'byebug'
 end
 
 group :development do

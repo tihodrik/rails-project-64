@@ -1,6 +1,9 @@
 h2
   | Log in
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+= form_for resource,
+  as: resource_name,
+  url: session_path(resource_name) do |f|
+
   .form-group.email.optional.user_email
     = f.label :email, class: 'email optional'
     br
@@ -8,12 +11,14 @@ h2
       autofocus: true,
       autocomplete: 'email',
       class: 'form-control string email optional'
+
   .form-group.password.optional.user_password
     = f.label :password, class: 'password optional'
     br
     = f.password_field :password,
       autocomplete: 'current-password',
       class: 'form-control password optional'
+      
   = field_set_tag nil, class: 'form-group boolean optional user_remember_me' do
     - if devise_mapping.rememberable?
       .form-check
